@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "usuario")
 public class UsuarioModel {
-
+    //Creación de las columnas o propiedades.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)

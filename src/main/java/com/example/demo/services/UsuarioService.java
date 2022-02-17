@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class UsuarioService {
     @Autowired
     UsuarioRepository usuarioRepository;
-    
+    //Retornamos las funciones creada en UsuarioController 
     public ArrayList<UsuarioModel> obtenerUsuarios(){
         return (ArrayList<UsuarioModel>) usuarioRepository.findAll();
     }
