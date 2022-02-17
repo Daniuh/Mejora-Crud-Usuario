@@ -13,7 +13,17 @@ public class UsuarioModel {
 
     private String nombre;
     private String email;
+    private Integer edad;
+    private Integer numeroCelular;
     private Integer prioridad;
+
+    public void setNumeroCelular(Integer numeroCelular){
+        this.numeroCelular = numeroCelular;
+    }
+
+    public Integer getNumeroCelular(){
+        return numeroCelular;
+    }
 
     public void setPrioridad(Integer prioridad){
         this.prioridad = prioridad;
@@ -21,6 +31,14 @@ public class UsuarioModel {
 
     public Integer getPrioridad(){
         return prioridad;
+    }
+
+    public Integer getEdad(){
+        return edad;
+    }
+    
+    public void setEdad(Integer edad){
+        this.edad = edad;
     }
 
     public Long getId() {
