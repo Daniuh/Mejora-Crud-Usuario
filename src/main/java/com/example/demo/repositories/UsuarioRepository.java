@@ -1,5 +1,13 @@
 package com.example.demo.repositories;
+import java.util.ArrayList;
 
-public class UsuarioRepository {
+import com.example.demo.models.UsuarioModel;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long>{
+    public abstract ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
     
 }
